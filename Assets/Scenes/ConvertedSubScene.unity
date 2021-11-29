@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77632920baecbfd40a3bd11dc3112b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidVelocity: 10
+  asteroidVelocity: 2
   playerForce: 50
   bulletVelocity: 500
   numAsteroids: 200

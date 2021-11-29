@@ -1,0 +1,251 @@
+# MTL written from D:\Dropbox (Personal)\GD_CharlesStuff\charles\Projects\LWGStarWars\x wing\T-65BXWing\Objects\XWing_Woody.obj
+newmtl Default
+Kd 0.933323 0.97646 0.999989
+Ns 8
+d 1
+illum 1
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+newmtl Stick
+Kd 0.784314 0.784314 0.784314
+Ns 256
+d 1
+illum 1
+Ka 0 0 0
+Ks 0 0 0
+newmtl xwingCanopy
+Kd 0.658824 0.686275 0.705882
+Ns 8
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+newmtl xwingCanopyGaskets
+Kd 0.8 0.8 0.8
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.2 0.2 0.2
+newmtl xwingCanopyGlassInner
+Kd 0.658824 0.686275 0.705882
+Ns 8
+d 0.05
+illum 1
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+newmtl xwingCanopyGlassOuter
+Kd 0.658824 0.686275 0.705882
+Ns 8
+d 0.05
+illum 1
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+newmtl xwingCockpitAluminum
+Kd 0.663333 0.68 0.69
+Ns 11.3137
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitBlackPlastic
+Kd 0.0735286 0.0735286 0.0735286
+Ns 11.3137
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitBluePlastic
+Kd 0.0147059 0.0323529 0.417647
+Ns 11.3137
+d 1
+illum 1
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitBrass
+Kd 0.8 0.8 0.8
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.2 0.2 0.2
+newmtl xwingCockpitChair
+Kd 0.336667 0.323333 0.28
+Ns 4
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.02 0.02 0.02
+newmtl xwingCockpitCyanPlastic
+Kd 0.494118 0.617647 0.747059
+Ns 11.3137
+d 1
+illum 1
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitGreenLights
+Kd 0.150979 0.218233 0.0892147
+Ns 256
+d 1
+illum 1
+Ka 1 1 1
+Ks 0 0 0
+newmtl xwingCockpitInterior
+Kd 0.658824 0.633726 0.614902
+Ns 8
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+newmtl xwingCockpitInteriorDetails
+Kd 0.470583 0.470583 0.470583
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl xwingCockpitLeftMonitor
+Kd 0.999989 0.999989 0.999989
+Ns 256
+d 1
+illum 1
+Ka 0 0 0
+Ks 0 0 0
+newmtl xwingCockpitMainMonitor
+Kd 0 0 0
+Ns 256
+d 1
+illum 1
+Ka 1 1 1
+Ks 0 0 0
+newmtl xwingCockpitMonitorGreen
+Kd 0 0 0
+Ns 8
+d 1
+illum 1
+Ka 1 1 1
+Ks 0.05 0.05 0.05
+newmtl xwingCockpitMonitorYellow
+Kd 0 0 0
+Ns 8
+d 1
+illum 1
+Ka 1 1 1
+Ks 0.05 0.05 0.05
+newmtl xwingCockpitOrangePlastic
+Kd 0.664706 0.279412 0.0735294
+Ns 11.3137
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitRedLights
+Kd 0.208627 0.0027451 0.0027451
+Ns 256
+d 1
+illum 1
+Ka 1 1 1
+Ks 0 0 0
+newmtl xwingCockpitRedPlastic
+Kd 0.5 0.0970588 0.0558824
+Ns 11.3137
+d 1
+illum 1
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitRightMonitor
+Kd 0.999989 0.999989 0.999989
+Ns 256
+d 1
+illum 1
+Ka 0 0 0
+Ks 0 0 0
+newmtl xwingCockpitSilver
+Kd 0.585294 0.6 0.608824
+Ns 11.3137
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitWhiteLights
+Kd 0.348627 0.337647 0.270392
+Ns 256
+d 1
+illum 1
+Ka 1 1 1
+Ks 0 0 0
+newmtl xwingCockpitWhitePlastic
+Kd 0.723522 0.741169 0.749992
+Ns 11.3137
+d 1
+illum 1
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingCockpitYellowPlastic
+Kd 0.588235 0.573529 0.147059
+Ns 11.3137
+d 1
+illum 1
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+newmtl xwingEngineGlow
+Kd 1 0.807843 0.807843
+Ns 8
+d 1
+illum 1
+Ka 2 2 2
+Ks 0 0 0
+newmtl xwingEngineGlowTrans
+Kd 0.921559 0.647052 0.74509
+Ns 8
+d 0.25
+illum 1
+Ka 3 3 3
+Ks 0.0460779 0.0323526 0.0372545
+newmtl xwingEngineInterior
+Kd 0.235098 0.194118 0.176863
+Ns 8
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+map_Kd D:\Dropbox (Personal)\GD_CharlesStuff\charles\Projects\LWGStarWars\x wing\T-65BXWing\Textures\Fuselage_CockpitColor.tga
+newmtl xwingEngines
+Kd 0.48 0.48 0.48
+Ns 8
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+map_Kd D:\Dropbox (Personal)\GD_CharlesStuff\charles\Projects\LWGStarWars\x wing\T-65BXWing\Textures\Engines_WingsColor.tga
+newmtl xwingFuselage
+Kd 0.599216 0.599216 0.599216
+Ns 8
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+map_Kd D:\Dropbox (Personal)\GD_CharlesStuff\charles\Projects\LWGStarWars\x wing\T-65BXWing\Textures\Fuselage_CockpitColor.tga
+newmtl xwingNose
+Kd 0.8 0.8 0.8
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.2 0.2 0.2
+newmtl xwingNurnies
+Kd 0.362353 0.362353 0.362353
+Ns 16
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+map_Kd D:\Dropbox (Personal)\GD_CharlesStuff\charles\Projects\LWGStarWars\x wing\T-65BXWing\Textures\Fuselage_CockpitColor.tga
+newmtl xwingSFoils
+Kd 0.599216 0.599216 0.599216
+Ns 8
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+map_Kd D:\Dropbox (Personal)\GD_CharlesStuff\charles\Projects\LWGStarWars\x wing\T-65BXWing\Textures\Engines_WingsColor.tga

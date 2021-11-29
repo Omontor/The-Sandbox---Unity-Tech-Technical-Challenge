@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: b546d112ff0bc204f8ca07937ead7999
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCanopy
+    second: {fileID: 2100000, guid: fcf3ccbad88b995489995154d2c539a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCanopyGaskets
+    second: {fileID: 2100000, guid: 04305a9ffb3300746875137cbd3c6bf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCanopyGlassInner
+    second: {fileID: 2100000, guid: 4274cce9e2923504a955707d68b00ae0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCanopyGlassOuter
+    second: {fileID: 2100000, guid: 4314df229a8edd147a4589c67c11ca41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitBlackPlastic
+    second: {fileID: 2100000, guid: a7b82581c00ca1f42b6e971ca1ae0768, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitBluePlastic
+    second: {fileID: 2100000, guid: d9bae69a154f6c2438f9ac92be6bbd1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitBrass
+    second: {fileID: 2100000, guid: 551de61adb174e345baaa3bd991d5edf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitCyanPlastic
+    second: {fileID: 2100000, guid: c4de3965a38f52144b4ac2237854abba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitGreenLights
+    second: {fileID: 2100000, guid: 14552621408a44b4ea1d7b44c425b66d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitInterior
+    second: {fileID: 2100000, guid: f6cd6f067d52da94c9ff2b6f7d3106f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitInteriorDetails
+    second: {fileID: 2100000, guid: 5d4bb8035f78f1645894a0f980fcc916, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitLeftMonitor
+    second: {fileID: 2100000, guid: e22aab2fdaadb884bbd307cd7f331544, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitMainMonitor
+    second: {fileID: 2100000, guid: fcb69585d3da41843af02bac8a62b335, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitMonitorGreen
+    second: {fileID: 2100000, guid: 8946fe4d47a756d439cf83e67d1d9c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitMonitorYellow
+    second: {fileID: 2100000, guid: fe76ac66400107247814bc94b17e8f47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitRedLights
+    second: {fileID: 2100000, guid: cf8b37d332fb1f948936a8ac8f6558ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitRedPlastic
+    second: {fileID: 2100000, guid: 281cc9e7e35f3a64196ce219c4f89dc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitRightMonitor
+    second: {fileID: 2100000, guid: d7e78ab2b7b15944f8540874f546ee07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitSilver
+    second: {fileID: 2100000, guid: b11aa53c21872fc468f0a8181c7feedc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitWhiteLights
+    second: {fileID: 2100000, guid: 0fd89af6cf6ddee46a7970416d7cbe6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitWhitePlastic
+    second: {fileID: 2100000, guid: 4bfeb31c5add02049befb01ddb10292c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: xwingCockpitYellowPlastic
+    second: {fileID: 2100000, guid: 5e4e8dcf34d45c64083a1756420234d3, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

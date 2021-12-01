@@ -4,6 +4,7 @@ using Unity.Transforms;
 using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
+using Unity.Physics;
 
 public class InputMovementSystem : SystemBase
 {
@@ -19,13 +20,14 @@ public class InputMovementSystem : SystemBase
         var gameSettings = GetSingleton<GameSettingsComponent>();
         var deltaTime = Time.DeltaTime;
 
+
         byte right, left, thrust, reverseThrust;
         right = left = thrust = reverseThrust = 0;
 
         float mouseX = 0;
         float mouseY = 0;
 
-     
+
         if (Input.GetKey("d"))
         {
             right = 1;
@@ -52,36 +54,34 @@ public class InputMovementSystem : SystemBase
 
         Entities
         .WithAll<PlayerTag>()
-        .ForEach((Entity entity, int nativeThreadIndex, ref Rotation rotation, ref VelocityComponent velocity) =>
+        .ForEach((Entity entity, int nativeThreadIndex, ref Rotation rotation, ref PhysicsVelocity velocity) =>
         {
             if (right == 1)
-            {  
-                velocity.Value += (math.mul(rotation.Value, new float3(1, 0, 0)).xyz) * gameSettings.playerForce * deltaTime;
+            {   
+                velocity.Linear += (math.mul(rotation.Value, new float3(1, 0, 0)).xyz) * gameSettings.playerForce * deltaTime;
             }
             if (left == 1)
-            {   
-                velocity.Value += (math.mul(rotation.Value, new float3(-1, 0, 0)).xyz) * gameSettings.playerForce * deltaTime;
+            {  
+                velocity.Linear += (math.mul(rotation.Value, new float3(-1, 0, 0)).xyz) * gameSettings.playerForce * deltaTime;
             }
             if (thrust == 1)
-            {   
-                velocity.Value += (math.mul(rotation.Value, new float3(0, 0, 1)).xyz) * gameSettings.playerForce * deltaTime;
+            {  
+                velocity.Linear += (math.mul(rotation.Value, new float3(0, 0, 1)).xyz) * gameSettings.playerForce * deltaTime;
             }
             if (reverseThrust == 1)
-            {  
-                velocity.Value += (math.mul(rotation.Value, new float3(0, 0, -1)).xyz) * gameSettings.playerForce * deltaTime;
+            {   
+                velocity.Linear += (math.mul(rotation.Value, new float3(0, 0, -1)).xyz) * gameSettings.playerForce * deltaTime;
             }
             if (mouseX != 0 || mouseY != 0)
             {   
-                
                 float lookSpeedH = 2f;
                 float lookSpeedV = 2f;
 
-       
+                //
                 Quaternion currentQuaternion = rotation.Value;
                 float yaw = currentQuaternion.eulerAngles.y;
                 float pitch = currentQuaternion.eulerAngles.x;
 
-    
                 yaw += lookSpeedH * mouseX;
                 pitch -= lookSpeedV * mouseY;
                 Quaternion newQuaternion = Quaternion.identity;

@@ -8,9 +8,12 @@ using Unity.Physics;
 
 public class InputMovementSystem : SystemBase
 {
+
+    AudioSource hyperspace;
+
     protected override void OnCreate()
     {
-
+        hyperspace = GameObject.Find("HyperSpace").GetComponent<AudioSource>();
         RequireSingletonForUpdate<GameSettingsComponent>();
     }
 
@@ -28,21 +31,19 @@ public class InputMovementSystem : SystemBase
         float mouseY = 0;
 
 
-        if (Input.GetKey("d"))
-        {
-            right = 1;
-        }
-        if (Input.GetKey("a"))
-        {
-            left = 1;
-        }
-        if (Input.GetKey("w"))
+
+    
+        if (Input.GetKeyDown("w"))
         {
             thrust = 1;
+            hyperspace.Play();
         }
-        if (Input.GetKey("s"))
+
+
+        if (Input.GetKeyDown("s"))
         {
             reverseThrust = 1;
+            hyperspace.Play();
         }
 
         if (Input.GetMouseButton(1))
@@ -54,23 +55,15 @@ public class InputMovementSystem : SystemBase
 
         Entities
         .WithAll<PlayerTag>()
-        .ForEach((Entity entity, int nativeThreadIndex, ref Rotation rotation, ref PhysicsVelocity velocity) =>
+        .ForEach((Entity entity, int nativeThreadIndex, ref Rotation rotation, ref PhysicsVelocity velocity, ref Translation pos) =>
         {
-            if (right == 1)
-            {   
-                velocity.Linear += (math.mul(rotation.Value, new float3(1, 0, 0)).xyz) * gameSettings.playerForce * deltaTime;
-            }
-            if (left == 1)
-            {  
-                velocity.Linear += (math.mul(rotation.Value, new float3(-1, 0, 0)).xyz) * gameSettings.playerForce * deltaTime;
-            }
             if (thrust == 1)
-            {  
-                velocity.Linear += (math.mul(rotation.Value, new float3(0, 0, 1)).xyz) * gameSettings.playerForce * deltaTime;
+            {
+                pos.Value.z += 5f;
             }
             if (reverseThrust == 1)
-            {   
-                velocity.Linear += (math.mul(rotation.Value, new float3(0, 0, -1)).xyz) * gameSettings.playerForce * deltaTime;
+            {
+                pos.Value.z -= 5f;
             }
             if (mouseX != 0 || mouseY != 0)
             {   

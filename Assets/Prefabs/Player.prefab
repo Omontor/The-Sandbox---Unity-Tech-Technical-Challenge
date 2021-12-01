@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 4660521239168613813}
   - component: {fileID: 1478330642345510918}
   - component: {fileID: 4497645281174080353}
+  - component: {fileID: -5927576981874713099}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -355,14 +356,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShapeType: 1
+  m_ShapeType: 0
   m_PrimitiveCenter:
-    x: 0
-    y: 0
-    z: 0
+    x: -0.020003796
+    y: 0.01723504
+    z: 0.97851324
   m_PrimitiveSize:
-    x: 2.24
-    y: 2.24
+    x: 10.9800005
+    y: 2.12553
     z: 12.262332
   m_PrimitiveOrientation:
     Value:
@@ -372,12 +373,12 @@ MonoBehaviour:
     RotationOrder: 4
   m_Capsule:
     Height: 12.262332
-    Radius: 1.12
+    Radius: 5.4900002
     Axis: 2
   m_Cylinder:
-    Height: 12.262332
-    Radius: 1.12
-    Axis: 2
+    Height: 2.12553
+    Radius: 6.131166
+    Axis: 1
   m_CylinderSideCount: 20
   m_SphereRadius: 6.131166
   m_MinimumSkinnedVertexWeight: 0.1
@@ -443,8 +444,8 @@ MonoBehaviour:
       m_Value:
         Category00: 0
         Category01: 1
-        Category02: 1
-        Category03: 1
+        Category02: 0
+        Category03: 0
         Category04: 0
         Category05: 0
         Category06: 0
@@ -536,6 +537,18 @@ MonoBehaviour:
     Tag05: 0
     Tag06: 0
     Tag07: 0
+--- !u!114 &-5927576981874713099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3583008637140245773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a975724b3bd924990b7ca1486b3d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4198479426680190328
 GameObject:
   m_ObjectHideFlags: 0

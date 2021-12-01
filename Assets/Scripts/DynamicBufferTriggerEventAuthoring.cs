@@ -103,18 +103,9 @@ namespace Unity.Physics.Stateful
         }
     }
 
-    // If this component is added to an entity, trigger events won't be added to dynamic buffer
-    // of that entity by TriggerEventConversionSystem. This component is by default added to
-    // CharacterController entity, so that CharacterControllerSystem can add trigger events to
-    // CharacterController on its own, without TriggerEventConversionSystem interference.
     public struct ExcludeFromTriggerEventConversion : IComponentData { }
 
-    // This system converts stream of TriggerEvents to StatefulTriggerEvents that are stored in a Dynamic Buffer.
-    // In order for TriggerEvents to be transformed to StatefulTriggerEvents and stored in a Dynamic Buffer, it is required to:
-    //    1) Tick IsTrigger on PhysicsShapeAuthoring on the entity that should raise trigger events
-    //    2) Add a DynamicBufferTriggerEventAuthoring component to that entity
-    //    3) If this is desired on a Character Controller, tick RaiseTriggerEvents on CharacterControllerAuthoring (skip 1) and 2)),
-    //    note that Character Controller will not become a trigger, it will raise events when overlapping with one
+
     [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
     [UpdateAfter(typeof(StepPhysicsWorld))]
     [UpdateBefore(typeof(EndFramePhysicsSystem))]
@@ -195,7 +186,6 @@ namespace Unity.Physics.Stateful
 
                 int cmpResult = currentFrameTriggerEvent.CompareTo(previousFrameTriggerEvent);
 
-                // Appears in previous, and current frame, mark it as Stay
                 if (cmpResult == 0)
                 {
                     currentFrameTriggerEvent.State = EventOverlapState.Stay;
@@ -205,14 +195,14 @@ namespace Unity.Physics.Stateful
                 }
                 else if (cmpResult < 0)
                 {
-                    // Appears in current, but not in previous, mark it as Enter
+
                     currentFrameTriggerEvent.State = EventOverlapState.Enter;
                     resultList.Add(currentFrameTriggerEvent);
                     i++;
                 }
                 else
                 {
-                    // Appears in previous, but not in current, mark it as Exit
+
                     previousFrameTriggerEvent.State = EventOverlapState.Exit;
                     resultList.Add(previousFrameTriggerEvent);
                     j++;
@@ -272,8 +262,7 @@ namespace Unity.Physics.Stateful
 
             var collectJobHandle = collectTriggerEventsJob.Schedule(m_StepPhysicsWorld.Simulation, ref physicsWorld, Dependency);
 
-            // Using HashMap since HashSet doesn't exist
-            // Setting value type to byte to minimize memory waste
+
             NativeHashMap<Entity, byte> entitiesWithBuffersMap = new NativeHashMap<Entity, byte>(0, Allocator.TempJob);
 
             var collectTriggerBuffersHandle = Entities

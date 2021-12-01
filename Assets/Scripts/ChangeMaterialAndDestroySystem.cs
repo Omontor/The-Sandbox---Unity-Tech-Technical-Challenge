@@ -5,8 +5,7 @@ using Unity.Physics.Stateful;
 using Unity.Rendering;
 using UnityEngine;
 
-//We did not need the ReferenceEntity so we deleted the IConvertGameObjectToEntity interface
-//and the TriggerVolumeChangeMaterial component
+
 
 [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
 [UpdateAfter(typeof(TriggerEventConversionSystem))]
@@ -42,9 +41,6 @@ public class ChangeMaterialAndDestroySystem : SystemBase
         Dependency = JobHandle.CombineDependencies(m_TriggerSystem.OutDependency, Dependency);
 
         var commandBuffer = m_CommandBufferSystem.CreateCommandBuffer();
-
-        // Need this extra variable here so that it can
-        // be captured by Entities.ForEach loop below
         var nonTriggerMask = m_NonTriggerMask;
 
         Entities
@@ -57,7 +53,6 @@ public class ChangeMaterialAndDestroySystem : SystemBase
                     var triggerEvent = triggerEventBuffer[i];
                     var otherEntity = triggerEvent.GetOtherEntity(e);
 
-                    // exclude other triggers and processed events
                     if (triggerEvent.State == EventOverlapState.Stay || !nonTriggerMask.Matches(otherEntity))
                     {
                         continue;

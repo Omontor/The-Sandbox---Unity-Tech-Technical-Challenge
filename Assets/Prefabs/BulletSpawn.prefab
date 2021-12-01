@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7041193648108119008}
   - component: {fileID: 6088159948775187760}
   - component: {fileID: 3869965602919021581}
+  - component: {fileID: 8741945963031531931}
   m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
@@ -212,7 +213,7 @@ MonoBehaviour:
         Category00: 1
         Category01: 1
         Category02: 1
-        Category03: 1
+        Category03: 0
         Category04: 0
         Category05: 0
         Category06: 0
@@ -304,3 +305,15 @@ MonoBehaviour:
     Tag05: 0
     Tag06: 0
     Tag07: 0
+--- !u!114 &8741945963031531931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112325137924425023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a975724b3bd924990b7ca1486b3d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

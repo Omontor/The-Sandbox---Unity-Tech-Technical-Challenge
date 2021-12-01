@@ -5,9 +5,16 @@ using UnityEngine;
 public class InitialPanel : MonoBehaviour
 {
     bool gamestarted;
+   public GameObject menu, hud;
+    private void Start()
+    {
+        menu.SetActive(true);
+        hud.SetActive(false);
+    }
     public void startGame()
     {
-        gameObject.SetActive(false);
+        menu.SetActive(false);
+        hud.SetActive(true);
     }
 
     private void Update()
